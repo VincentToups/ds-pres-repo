@@ -21,7 +21,7 @@ dir.create("derived_data/", showWarnings=FALSE);
 n_before_cleaning <- nrow(observations);
 
 observations_tidy <- observations %>%
-    filter(year >= -12000 & year <= 12000);
+    filter(year >= -2000 & year <= 2000);
 
 n_after <- nrow(observations_tidy);
 
@@ -33,5 +33,5 @@ write_table_to_file(observations_tidy,
 ## Another output:
 dir.create("fragments",showWarnings=FALSE);
 write_text_to_file("fragments/cleaning.fragment.tex",
-                   "Before cleaning there were %d rows. Throwing away dates in excess of 12000 BC or AD resulted in keeping just %d rows.", n_before_cleaning, n_after);
+                   "Before cleaning there were %d rows. Throwing away dates in excess of 2000 BC or AD resulted in keeping just %d rows.", n_before_cleaning, n_after);
 
