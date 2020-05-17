@@ -17,5 +17,10 @@ There are also some handy aliases defined in alias.sh
     m # runs make
     b # runs bash inside the container
 
+Make Targets
+============
 
-    
+At present you can make the tidied data set like this:
+
+    m derived_data/observations-tidy.csv
+
