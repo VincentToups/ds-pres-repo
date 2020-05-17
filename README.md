@@ -24,3 +24,8 @@ At present you can make the tidied data set like this:
 
     m derived_data/observations-tidy.csv
 
+Or a figure
+
+    m figures/temporal-histogram.png
+
+
