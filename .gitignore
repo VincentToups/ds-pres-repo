@@ -1,7 +1,11 @@
 figures
 derived_data
 fragments
+versioned_reports
 report.pdf
+
+report.aux
+report.log
 
 # -*- mode: gitignore; -*-
 *~
