@@ -3,7 +3,7 @@ report.pdf: report.tex figures/temporal-histogram.png fragments/cleaning.fragmen
 	pdflatex report.tex
 	pdflatex report.tex
 	mkdir -p versioned_reports
-	cp report.pdf versioned_reports/game-timeline-`git log -1 | grep commit  | cut -d' ' -f2 |cut -c 1-5`.pdf
+	cp report.pdf versioned_reports/game-timeline-`date | tr ' :' '_'`-`git log -1 | grep commit  | cut -d' ' -f2 |cut -c 1-5`.pdf
 
 ## A temporal histogram
 figures/temporal-histogram.png: temporal-histogram.R derived_data/observations-tidy.csv
